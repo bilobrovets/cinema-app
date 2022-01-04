@@ -17,7 +17,7 @@ public class ShoppingCart {
     private Long id;
     @OneToMany
     @JoinTable(name = "shopping_carts_tickets",
-            joinColumns = @JoinColumn(name = "shoping_card_id"),
+            joinColumns = @JoinColumn(name = "shopping_card_id"),
             inverseJoinColumns = @JoinColumn(name = "ticket_id"))
     private List<Ticket> tickets;
     @OneToOne
